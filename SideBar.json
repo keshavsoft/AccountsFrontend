@@ -1,0 +1,53 @@
+[
+    {
+        "Name": "index",
+        "DisplayName": "DashBoard",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+    },
+    {
+        "Name": "show",
+        "DisplayName": "ShowAll",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success",
+        "isCollapsable": true,
+        "SubItems": [
+            {
+                "SubItemName": "showAsIs",
+                "DisplayName": "AsIs",
+                "IconClass": "bi bi-card-list",
+                "SpanClass": "text-success"
+            },
+            {
+                "SubItemName": "showGroupBy",
+                "DisplayName": "showGroupBy",
+                "IconClass": "bi bi-card-list",
+                "SpanClass": "text-success"
+            }
+        ]
+    },
+    {
+        "Name": "footerCreate",
+        "DisplayName": "footerCreate",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+    },
+    {
+        "Name": "verticalCreate",
+        "DisplayName": "VerticalCreate",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+    },
+    {
+        "Name": "showWS",
+        "DisplayName": "showWS",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+    },
+    {
+        "Name": "footerCreateWS",
+        "DisplayName": "footerCreateWS",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-warning"
+    }
+]
