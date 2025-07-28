@@ -25,12 +25,12 @@
 <body>
     {{> _nav path="../.."}}
 
-   {{> SideNavs/sidebar path="../.." currentPage="alter"}}
+   {{> SideNavs/sidebar path="../.." currentPage="Delete"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
-        {{> _breadCrumb path="../.." page="alter"}}
+        {{> _breadCrumb path="../.." page="Delete"}}
         
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
@@ -52,7 +52,7 @@
                     <table id="table" class="table table-bordered table-striped" data-show-footer="true"
                         data-toolbar="#toolbar">
                         <thead>
-                            {{> ForTable/_TableRowAlter}}
+                            {{> ForTable/_TableRowDalete}}
                         </thead>
                        
                     </table>
@@ -63,7 +63,7 @@
 
         {{> _scripts path="../.."}}
 
-        <script type="module" src="../../Js/OnArray/Alter/entryFile.js"></script>
+        <script type="module" src="../../Js/OnArray/Delete/entryFile.js"></script>
     </main>
 
 </body>
