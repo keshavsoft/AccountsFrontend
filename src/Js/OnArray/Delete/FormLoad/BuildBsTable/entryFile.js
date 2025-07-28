@@ -7,6 +7,7 @@ const StartFunc = () => {
         onClickRow: StartFuncOnClickRowFunc
     };
 
+
     $table.bootstrapTable(finalOptions);
 };
 

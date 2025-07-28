@@ -8,7 +8,7 @@
         {{title}}
     </th>
     {{/each}}
-    <th data-field="KS-Save">
+    <th data-field="KS-Delete" data-formatter="window.GlobalDeleteFormatter">
         Options
     </th>
 </tr>
@@ -17,4 +17,13 @@
     window.GlobalSerialFormatter = (value, row, index) => {
         return index + 1;
     };
+
+    window.GlobalDeleteFormatter = (value, row, index) => {
+    return [
+        `<a href="#" class="link btn" title="Delete">`,
+        `<i class="bi bi-trash text-danger"></i>`,
+        `</a>`
+
+    ].join('');
+};
 </script>
