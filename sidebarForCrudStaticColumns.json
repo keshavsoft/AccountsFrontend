@@ -1,0 +1,23 @@
+[
+    {
+        "Name": "index",
+        "DisplayName": "DashBoard",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+    },
+   {
+        "Name": "showOnly",
+        "DisplayName": "ShowOnly",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success",
+        "isCollapsable": true,
+        "SubItems": [
+            {
+                "SubItemName": "showWSPageFilterControl",
+                "DisplayName": "showWSPFC",
+                "IconClass": "bi bi-card-list",
+                "SpanClass": "text-success"
+            }
+        ]
+    }
+]
