@@ -50,5 +50,18 @@
     "DisplayName": "footerCreateWS",
     "IconClass": "bi bi-card-list",
     "SpanClass": "text-warning"
+  },
+  {
+    "Name": "Alter",
+    "DisplayName": "Alter",
+    "IconClass": "bi bi-card-list",
+    "SpanClass": "text-success"
+  },
+  {
+    "Name": "Delete",
+    "DisplayName": "Delete",
+    "IconClass": "bi bi-card-list",
+    "SpanClass": "text-success"
   }
+  
 ]
