@@ -33,6 +33,27 @@
     ]
   },
   {
+    "Name": "filterShow",
+    "DisplayName": "filterShow",
+    "IconClass": "bi bi-card-list",
+    "SpanClass": "text-success",
+    "isCollapsable": true,
+    "SubItems": [
+      {
+        "SubItemName": "showCreditFilter",
+        "DisplayName": "showCreditFilter",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+      },
+      {
+        "SubItemName": "showDebitFilter",
+        "DisplayName": "showDebitFilter",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+      }
+    ]
+  },
+  {
     "Name": "footerCreate",
     "DisplayName": "footerCreate",
     "IconClass": "bi bi-card-list",
