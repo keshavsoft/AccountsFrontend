@@ -55,10 +55,10 @@
                             <tr>
                                 <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
                                 <th data-field="AccountName" >Account Name</th>
-                                <th data-field="Date">Date</th>
+                                <th data-field="Date" >Date</th>
                                 <th data-field="Description">Description</th>
-                                <th data-field="Credit" data-filter-control="select">Credit</th>
-                                <th data-field="Debit">Debit</th>
+                                <th data-field="Credit" data-filter-control="select" data-align="right" data-footer-formatter="TotalFormatter">Credit</th>
+                                <th data-field="Debit" data-align="right" data-footer-formatter="TotalFormatter">Debit</th>
                             </tr>
                         </thead>
                     </table>
@@ -74,6 +74,17 @@
                 return index + 1;
             };
         </script>
+         <script>function TotalFormatter(data, k1, k2) {
+            var field = this.field;
+            console.log("field : ", field, this, k1, k2);
+            const LocalReturnValue = data.map(function (row) {
+                return +row[field]
+            }).reduce(function (sum, i) {
+                return sum + i
+            }, 0);
+
+            return LocalReturnValue;
+        };</script>
 
         <script type="module" src="../../Js/JournalsTable/filterCreditshow/entryFile.js"></script>
     </main>

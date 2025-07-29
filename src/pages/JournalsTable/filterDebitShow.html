@@ -56,8 +56,8 @@
                                 <th data-field="AccountName">Account Name</th>
                                 <th data-field="Date">Date</th>
                                 <th data-field="Description">Description</th>
-                                <th data-field="Credit">Credit</th>
-                                <th data-field="Debit" data-filter-control="select">Debit</th>
+                                <th data-field="Credit" data-align="right" data-footer-formatter="TotalFormatter">Credit</th>
+                                <th data-field="Debit" data-filter-control="select" data-align="right" data-footer-formatter="TotalFormatter">Debit</th>
                             </tr>
                         </thead>
                     </table>
@@ -73,6 +73,17 @@
                 return index + 1;
             };
         </script>
+         <script>function TotalFormatter(data, k1, k2) {
+            var field = this.field;
+            console.log("field : ", field, this, k1, k2);
+            const LocalReturnValue = data.map(function (row) {
+                return +row[field]
+            }).reduce(function (sum, i) {
+                return sum + i
+            }, 0);
+
+            return LocalReturnValue;
+        };</script>
 
         <script type="module" src="../../Js/JournalsTable/filterDebitShow/entryFile.js"></script>
     </main>

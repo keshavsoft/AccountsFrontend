@@ -35,7 +35,7 @@
   {
     "Name": "filter",
     "DisplayName": "filterShow",
-    "IconClass": "bi bi-card-list",
+    "IconClass": "bi bi-filter",
     "SpanClass": "text-success",
     "isCollapsable": true,
     "SubItems": [
