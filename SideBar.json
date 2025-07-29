@@ -33,21 +33,27 @@
     ]
   },
   {
-    "Name": "filterShow",
+    "Name": "filter",
     "DisplayName": "filterShow",
     "IconClass": "bi bi-card-list",
     "SpanClass": "text-success",
     "isCollapsable": true,
     "SubItems": [
       {
-        "SubItemName": "showCreditFilter",
-        "DisplayName": "showCreditFilter",
+        "SubItemName": "filterAccountNameShow",
+        "DisplayName": "AccountName",
         "IconClass": "bi bi-card-list",
         "SpanClass": "text-success"
       },
       {
-        "SubItemName": "showDebitFilter",
-        "DisplayName": "showDebitFilter",
+        "SubItemName": "filterCreditShow",
+        "DisplayName": "Credit",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+      },
+      {
+        "SubItemName": "filterDebitShow",
+        "DisplayName": "Debit",
         "IconClass": "bi bi-card-list",
         "SpanClass": "text-success"
       }
@@ -65,7 +71,6 @@
     "IconClass": "bi bi-card-list",
     "SpanClass": "text-success"
   },
-
   {
     "Name": "footerCreateWS",
     "DisplayName": "footerCreateWS",
@@ -84,5 +89,4 @@
     "IconClass": "bi bi-card-list",
     "SpanClass": "text-success"
   }
-  
 ]

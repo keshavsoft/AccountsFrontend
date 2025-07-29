@@ -5,7 +5,7 @@
             "field": "AccountName",
             "title": "Account Name",
             "isInput": true,
-             "filterControl":"select"
+            "filterControl": "select"
         },
         {
             "field": "Date",
@@ -26,6 +26,7 @@
             "title": "Credit",
             "type": "number",
             "isNumber": true,
+            "filterControl": "select",
             "numberConfig": {
                 "step": "0.01",
                 "min": "0",
@@ -33,13 +34,14 @@
             },
             "footerFormatter": "TotalFormatter",
             "ShowTotal": true,
-            "ShowDifference":true
+            "ShowDifference": true
         },
         {
             "field": "Debit",
             "title": "Debit",
             "type": "number",
             "isNumber": true,
+            "filterControl": "select",
             "numberConfig": {
                 "step": "0.01",
                 "min": "0",
@@ -47,7 +49,7 @@
             },
             "footerFormatter": "TotalFormatter",
             "ShowTotal": true,
-            "ShowDifference":true
+            "ShowDifference": true
         }
     ],
     "data": [],
