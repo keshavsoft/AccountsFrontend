@@ -1,7 +1,7 @@
 [
   {
     "Name": "index",
-    "DisplayName": "DashBoard",
+    "DisplayName": "Journals",
     "IconClass": "bi bi-card-list",
     "SpanClass": "text-success"
   },
@@ -36,7 +36,7 @@
     "Name": "filter",
     "DisplayName": "filterShow",
     "IconClass": "bi bi-filter",
-    "SpanClass": "text-success",
+    "SpanClass": "text-warning",
     "isCollapsable": true,
     "SubItems": [
       {

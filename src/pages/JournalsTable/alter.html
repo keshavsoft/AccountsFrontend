@@ -25,13 +25,13 @@
 <body>
     {{> _nav path="../.."}}
 
-   {{> SideNavs/sidebar path="../.." currentPage="alter"}}
+    {{> SideNavs/sidebar path="../.." currentPage="alter"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
         {{> _breadCrumb path="../.." page="alter"}}
-        
+
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
                 class="btn d-flex justify-content-center align-items-center RefreshBSTableClass bg-gray-700 text-white"
@@ -54,7 +54,7 @@
                         <thead>
                             {{> ForTable/_TableRowAlter}}
                         </thead>
-                       
+
                     </table>
                 </div>
             </div>
