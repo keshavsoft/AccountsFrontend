@@ -25,12 +25,12 @@
 <body>
     {{> _nav path="../.."}}
 
-    {{> SideNavs/sidebar path="../.." currentPage="filterDebitShow" currentPageGroup="filter"}}
+    {{> SideNavs/sidebar path="../.." currentPage="totalsShow" currentPageGroup="Totals"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
-        {{> _breadCrumb path="../.." page="filterDebitShow"}}
+        {{> _breadCrumb path="../.." page="totalsShow"}}
 
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
@@ -49,16 +49,9 @@
             <div class="card-body">
                 <div class="table-responsive">
                     <table id="table" class="table table-bordered table-striped" data-show-footer="true"
-                        data-toolbar="#toolbar" data-search="true" data-show-footer="true" data-filter-control="true">
+                        data-toolbar="#toolbar">
                         <thead>
-                            <tr>
-                                <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
-                                <th data-field="AccountName">Account Name</th>
-                                <th data-field="Date">Date</th>
-                                <th data-field="Description">Description</th>
-                                <th data-field="Credit" data-align="right" data-footer-formatter="TotalFormatter">Credit</th>
-                                <th data-field="Debit" data-filter-control="select" data-align="right" data-footer-formatter="TotalFormatter">Debit</th>
-                            </tr>
+                            {{> ForTable/_TableHeader}}
                         </thead>
                     </table>
                 </div>
@@ -85,7 +78,7 @@
             return LocalReturnValue;
         };</script>
 
-        <script type="module" src="../../Js/JournalsTable/FilterDebitShow/entryFile.js"></script>
+        <script type="module" src="../../Js/JournalsTable/TotalsShow/entryFile.js"></script>
     </main>
 
 </body>
