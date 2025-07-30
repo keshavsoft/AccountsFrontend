@@ -62,7 +62,7 @@
   {
     "Name": "footerCreate",
     "DisplayName": "footerCreate",
-    "IconClass": "bi bi-card-list",
+    "IconClass": "bi bi-archive",
     "SpanClass": "text-success"
   },
   {
@@ -74,7 +74,7 @@
   {
     "Name": "footerCreateWS",
     "DisplayName": "footerCreateWS",
-    "IconClass": "bi bi-card-list",
+    "IconClass": "bi bi-arrow-bar-down",
     "SpanClass": "text-warning"
   },
   {
