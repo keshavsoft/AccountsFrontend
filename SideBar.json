@@ -33,6 +33,21 @@
     ]
   },
   {
+    "Name": "Totals",
+    "DisplayName": "Totals",
+    "IconClass": "bi bi-card-list",
+    "SpanClass": "text-success",
+    "isCollapsable": true,
+    "SubItems": [
+      {
+        "SubItemName": "totalsShow",
+        "DisplayName": "totalsShow",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+      }
+    ]
+  },
+  {
     "Name": "filter",
     "DisplayName": "filterShow",
     "IconClass": "bi bi-filter",
