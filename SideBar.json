@@ -62,31 +62,31 @@
   {
     "Name": "footerCreate",
     "DisplayName": "footerCreate",
-    "IconClass": "bi bi-archive",
-    "SpanClass": "text-success"
+    "IconClass": "bi bi-pencil-square",
+    "SpanClass": "text-light"
   },
   {
     "Name": "verticalCreate",
     "DisplayName": "VerticalCreate",
-    "IconClass": "bi bi-card-list",
-    "SpanClass": "text-success"
+    "IconClass": "bi bi-vector-pen",
+    "SpanClass": "text-warning"
   },
   {
     "Name": "footerCreateWS",
     "DisplayName": "footerCreateWS",
-    "IconClass": "bi bi-arrow-bar-down",
-    "SpanClass": "text-warning"
+    "IconClass": "bi bi-archive",
+    "SpanClass": "text-info"
   },
   {
     "Name": "Alter",
     "DisplayName": "Alter",
-    "IconClass": "bi bi-card-list",
+    "IconClass": "bi bi-book",
     "SpanClass": "text-success"
   },
   {
     "Name": "Delete",
     "DisplayName": "Delete",
-    "IconClass": "bi bi-card-list",
-    "SpanClass": "text-success"
+    "IconClass": "bi bi-trash3",
+    "SpanClass": "text-danger"
   }
 ]
