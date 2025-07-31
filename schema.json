@@ -35,7 +35,7 @@
             "footerFormatter": "TotalFormatter",
             "ShowTotal": true,
             "ShowDifference": true,
-            "align": "right"
+            "align":"right"
         },
         {
             "field": "Debit",
@@ -51,8 +51,7 @@
             "footerFormatter": "TotalFormatter",
             "ShowTotal": true,
             "ShowDifference": true,
-            "align": "right"
-
+            "align":"right"
         }
     ],
     "data": [],
