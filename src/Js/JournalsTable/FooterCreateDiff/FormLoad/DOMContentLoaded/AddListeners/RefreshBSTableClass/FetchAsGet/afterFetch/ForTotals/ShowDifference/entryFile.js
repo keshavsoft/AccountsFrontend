@@ -1,5 +1,5 @@
 const StartFunc = ({ inData }) => {
-    
+
     let totalCredit = 0;
     let totalDebit = 0;
 
@@ -17,8 +17,17 @@ const StartFunc = ({ inData }) => {
     const creditDiffEl = document.getElementById("HtmlDiffId-Credit");
     const debitDiffEl = document.getElementById("HtmlDiffId-Debit");
 
-    if (creditDiffEl) creditDiffEl.innerText = `₹${(totalCredit - totalDebit).toFixed(2)}`;
-    if (debitDiffEl) debitDiffEl.innerText = `₹${(totalDebit - totalCredit).toFixed(2)}`;
+    // if (creditDiffEl) creditDiffEl.innerText = `₹${(totalCredit - totalDebit).toFixed(2)}`;
+    // if (debitDiffEl) debitDiffEl.innerText = `₹${(totalDebit - totalCredit).toFixed(2)}`;
+    if (creditDiffEl) {
+        const creditDiff = totalCredit - totalDebit;
+        creditDiffEl.innerText = creditDiff >= 0 ? `₹${creditDiff.toFixed(2)}` : '';
+    }
+
+    if (debitDiffEl) {
+        const debitDiff = totalDebit - totalCredit;
+        debitDiffEl.innerText = debitDiff >= 0 ? `₹${debitDiff.toFixed(2)}` : '';
+    };
 };
 
 export { StartFunc };
