@@ -14,7 +14,7 @@
     "SubItems": [
       {
         "SubItemName": "showAsIs",
-        "DisplayName": "AsIs",
+        "DisplayName": "showAsIs",
         "IconClass": "bi bi-binoculars",
         "SpanClass": "text-secondary"
       },
