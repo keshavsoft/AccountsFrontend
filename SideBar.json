@@ -48,6 +48,21 @@
     ]
   },
   {
+    "Name": "Balance",
+    "DisplayName": "Balance",
+    "IconClass": "bi bi-card-list",
+    "SpanClass": "text-success",
+    "isCollapsable": true,
+    "SubItems": [
+      {
+        "SubItemName": "footerCreateDiff",
+        "DisplayName": "footerCreateDiff",
+        "IconClass": "bi bi-card-list",
+        "SpanClass": "text-success"
+      }
+    ]
+  },
+  {
     "Name": "filter",
     "DisplayName": "filterShow",
     "IconClass": "bi bi-filter",
