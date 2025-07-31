@@ -35,7 +35,7 @@
   {
     "Name": "Totals",
     "DisplayName": "Totals",
-    "IconClass": "bi bi-calculator",
+    "IconClass": "bi bi-cloud-plus",
     "SpanClass": "text-warning",
     "isCollapsable": true,
     "SubItems": [
@@ -50,7 +50,7 @@
   {
     "Name": "Balance",
     "DisplayName": "Balance",
-    "IconClass": "bi bi-bounding-box",
+    "IconClass": "bi bi-duffle",
     "SpanClass": "text-dark",
     "isCollapsable": true,
     "SubItems": [
@@ -65,7 +65,7 @@
   {
     "Name": "filter",
     "DisplayName": "filterShow",
-    "IconClass": "bi bi-funnel",
+    "IconClass": "bi bi-file-plus",
     "SpanClass": "text-secondary",
     "isCollapsable": true,
     "SubItems": [
@@ -93,7 +93,7 @@
     "Name": "footerCreate",
     "DisplayName": "footerCreate",
     "IconClass": "bi bi-pencil-fill",
-    "SpanClass": "text-secondary"
+    "SpanClass": "text-dark"
   },
   {
     "Name": "verticalCreate",
