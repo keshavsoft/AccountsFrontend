@@ -25,13 +25,13 @@
 <body>
     {{> _nav path="../.."}}
 
-   {{> SideNavs/sidebar path="../.." currentPage="footerCreate"}}
+    {{> SideNavs/sidebar path="../.." currentPage="footerCreateDiff" currentPageGroup="Balance"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
-        {{> _breadCrumb path="../.." page="footercreate"}}
-        
+        {{> _breadCrumb path="../.." page="footerCreateDiff" }}
+
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
                 class="btn d-flex justify-content-center align-items-center RefreshBSTableClass bg-gray-700 text-white"
@@ -52,10 +52,33 @@
                     <table id="table" class="table table-bordered table-striped" data-show-footer="true"
                         data-toolbar="#toolbar">
                         <thead>
-                            {{> ForTable/_TableTotals}}
+                            <tr>
+                                <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
+                                {{> ForTable/_TableHeaderDiff}}
+                                <th data-field="KS-Save">Options</th>
+                            </tr>
                         </thead>
+
                         <tfoot>
-                            {{> ForTable/_TableFooter}}
+                            <tr>
+                                <th></th>
+                                {{> ForTable/_TableFooterDiff}}
+                                <th class="align-top p-1">
+                                    <div class="d-flex flex-column gap-1">
+                                        <button class="btn btn-sm btn-success save-btn" id="TableFooterSaveButtonId"
+                                            data-index="${index}">Save</button>
+                                        <div class="invisible"><small>placeholder</small></div>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                {{> ForTable/_TableFooterDiff}}
+                                <th>
+                                </th>
+                            </tr>
+
                         </tfoot>
                     </table>
                 </div>
@@ -64,8 +87,12 @@
         {{> _footer path="../.."}}
 
         {{> _scripts path="../.."}}
-
-        <script type="module" src="../../Js/JournalsTable/FooterCreate/entryFile.js"></script>
+        <script>
+            window.GlobalSerialFormatter = (value, row, index) => {
+                return index + 1;
+            };
+        </script>
+        <script type="module" src="../../Js/JournalsTable/FooterCreateDiff/entryFile.js"></script>
     </main>
 
 </body>
