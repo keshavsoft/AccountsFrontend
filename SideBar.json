@@ -2,47 +2,47 @@
   {
     "Name": "index",
     "DisplayName": "Journals",
-    "IconClass": "bi bi-card-list",
-    "SpanClass": "text-success"
+    "IconClass": "bi bi-journal-text",
+    "SpanClass": "text-info"
   },
   {
     "Name": "show",
     "DisplayName": "ShowAll",
-    "IconClass": "bi bi-card-list",
+    "IconClass": "bi bi-eye",
     "SpanClass": "text-success",
     "isCollapsable": true,
     "SubItems": [
       {
         "SubItemName": "showAsIs",
         "DisplayName": "AsIs",
-        "IconClass": "bi bi-card-list",
-        "SpanClass": "text-success"
+        "IconClass": "bi bi-binoculars",
+        "SpanClass": "text-secondary"
       },
       {
         "SubItemName": "showGroupBy",
         "DisplayName": "showGroupBy",
-        "IconClass": "bi bi-card-list",
-        "SpanClass": "text-success"
+        "IconClass": "bi bi-diagram-3",
+        "SpanClass": "text-warning"
       },
       {
         "SubItemName": "showWS",
         "DisplayName": "showWS",
-        "IconClass": "bi bi-card-list",
-        "SpanClass": "text-success"
+        "IconClass": "bi bi-layers",
+        "SpanClass": "text-info"
       }
     ]
   },
   {
     "Name": "Totals",
     "DisplayName": "Totals",
-    "IconClass": "bi bi-card-list",
-    "SpanClass": "text-success",
+    "IconClass": "bi bi-calculator",
+    "SpanClass": "text-warning",
     "isCollapsable": true,
     "SubItems": [
       {
         "SubItemName": "totalsShow",
         "DisplayName": "totalsShow",
-        "IconClass": "bi bi-card-list",
+        "IconClass": "bi bi-pie-chart",
         "SpanClass": "text-success"
       }
     ]
@@ -50,73 +50,73 @@
   {
     "Name": "Balance",
     "DisplayName": "Balance",
-    "IconClass": "bi bi-card-list",
-    "SpanClass": "text-success",
+    "IconClass": "bi bi-bounding-box",
+    "SpanClass": "text-dark",
     "isCollapsable": true,
     "SubItems": [
       {
         "SubItemName": "footerCreateDiff",
         "DisplayName": "footerCreateDiff",
-        "IconClass": "bi bi-card-list",
-        "SpanClass": "text-success"
+        "IconClass": "bi bi-sliders",
+        "SpanClass": "text-warning"
       }
     ]
   },
   {
     "Name": "filter",
     "DisplayName": "filterShow",
-    "IconClass": "bi bi-filter",
-    "SpanClass": "text-warning",
+    "IconClass": "bi bi-funnel",
+    "SpanClass": "text-secondary",
     "isCollapsable": true,
     "SubItems": [
       {
         "SubItemName": "filterAccountNameShow",
         "DisplayName": "AccountName",
-        "IconClass": "bi bi-card-list",
+        "IconClass": "bi bi-person-lines-fill",
         "SpanClass": "text-success"
       },
       {
         "SubItemName": "filterCreditShow",
         "DisplayName": "Credit",
-        "IconClass": "bi bi-card-list",
-        "SpanClass": "text-success"
+        "IconClass": "bi bi-cash-coin",
+        "SpanClass": "text-info"
       },
       {
         "SubItemName": "filterDebitShow",
         "DisplayName": "Debit",
-        "IconClass": "bi bi-card-list",
-        "SpanClass": "text-success"
+        "IconClass": "bi bi-credit-card",
+        "SpanClass": "text-danger"
       }
     ]
   },
   {
     "Name": "footerCreate",
     "DisplayName": "footerCreate",
-    "IconClass": "bi bi-pencil-square",
-    "SpanClass": "text-light"
+    "IconClass": "bi bi-pencil-fill",
+    "SpanClass": "text-secondary"
   },
   {
     "Name": "verticalCreate",
     "DisplayName": "VerticalCreate",
-    "IconClass": "bi bi-vector-pen",
-    "SpanClass": "text-warning"
+    "IconClass": "bi bi-layout-sidebar",
+    "SpanClass": "text-info"
   },
   {
     "Name": "footerCreateWS",
     "DisplayName": "footerCreateWS",
-    "IconClass": "bi bi-archive",
-    "SpanClass": "text-info"
+    "IconClass": "bi bi-braces-asterisk",
+    "SpanClass": "text-warning"
   },
   {
-    "Name": "Alter",
+    "Name": "alter",
     "DisplayName": "Alter",
-    "IconClass": "bi bi-book",
+    "IconClass": "bi bi-pencil-square",
     "SpanClass": "text-success"
   },
   {
     "Name": "Delete",
     "DisplayName": "Delete",
-    "IconClass": "bi bi-trash3",
+    "IconClass": "bi bi-trash-fill",
     "SpanClass": "text-danger"
   }
 ]

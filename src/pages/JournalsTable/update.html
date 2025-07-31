@@ -25,11 +25,11 @@
 <body>
     {{> _nav path="../.."}}
 
-    {{> SideNavs/sidebar path="../.." currentPage="verticalCreate"}}
+    {{> SideNavs/sidebar path="../.." currentPage="update"}}
     <main class="content">
         {{> _topbar path="../.."}}
 
-        {{> _breadCrumb path="../.." page="verticalCreate"}}
+        {{> _breadCrumb path="../.." page="update"}}
 
       
         <div class="row">
@@ -40,7 +40,7 @@
                             {{> ForTable/_loopArray}}
                             <div class="text-center mt-4">
                                 <button id="SaveButtonId"
-                                    class="btn btn-primary px-4 RefreshBSTableClass">Create</button>
+                                    class="btn btn-primary px-4 RefreshBSTableClass">update</button>
                             </div>
                     </form>
 
