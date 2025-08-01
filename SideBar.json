@@ -14,19 +14,19 @@
     "SubItems": [
       {
         "SubItemName": "showAsIs",
-        "DisplayName": "showAsIs",
+        "DisplayName": "AsIs",
         "IconClass": "bi bi-binoculars",
         "SpanClass": "text-secondary"
       },
       {
         "SubItemName": "showGroupBy",
-        "DisplayName": "showGroupBy",
+        "DisplayName": "GroupBy",
         "IconClass": "bi bi-diagram-3",
         "SpanClass": "text-warning"
       },
       {
         "SubItemName": "showWS",
-        "DisplayName": "showWS",
+        "DisplayName": "WS",
         "IconClass": "bi bi-layers",
         "SpanClass": "text-info"
       }
