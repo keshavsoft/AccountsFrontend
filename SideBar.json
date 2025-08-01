@@ -161,6 +161,18 @@
         "DisplayName": "delete",
         "IconClass": "bi bi-pie-chart",
         "SpanClass": "text-success"
+      },
+      {
+        "SubItemName": "deleteTotals",
+        "DisplayName": "deleteTotals",
+        "IconClass": "bi bi-pie-chart",
+        "SpanClass": "text-success"
+      },
+      {
+        "SubItemName": "deleteDiff",
+        "DisplayName": "deleteDiff",
+        "IconClass": "bi bi-pie-chart",
+        "SpanClass": "text-success"
       }
     ]
   }
