@@ -4,7 +4,7 @@
     {{#each columns}}
     <th data-field="{{field}}" {{#if align}}data-align="{{align}}" {{/if}} {{#if
         filterControl}}data-filter-control="{{filterControl}}" {{/if}} {{#if (isVisible this)}}
-        data-visible={{visible}}{{/if}}>
+        data-visible={{visible}}{{/if}} {{#if ShowRupee}}data-formatter="window.RupeeFormatter" {{/if}}>
         {{title}}
     </th>
     {{/each}}
@@ -16,5 +16,9 @@
 <script>
     window.GlobalSerialFormatter = (value, row, index) => {
         return index + 1;
+    };
+    window.RupeeFormatter = (value) => {
+        if (value === null || value === undefined || value === '') return '';
+        return `₹ ${parseFloat(value).toFixed(2)}`;
     };
 </script>
