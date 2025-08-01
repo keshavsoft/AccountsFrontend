@@ -6,6 +6,12 @@
     "SpanClass": "text-info"
   },
   {
+    "Name": "footerCreate",
+    "DisplayName": "footerCreate",
+    "IconClass": "bi bi-pencil-fill",
+    "SpanClass": "text-dark"
+  },
+  {
     "Name": "show",
     "DisplayName": "ShowAll",
     "IconClass": "bi bi-eye",
@@ -105,12 +111,6 @@
     ]
   },
   {
-    "Name": "footerCreate",
-    "DisplayName": "footerCreate",
-    "IconClass": "bi bi-pencil-fill",
-    "SpanClass": "text-dark"
-  },
-  {
     "Name": "verticalCreate",
     "DisplayName": "VerticalCreate",
     "IconClass": "bi bi-layout-sidebar",
@@ -126,12 +126,42 @@
     "Name": "alter",
     "DisplayName": "Alter",
     "IconClass": "bi bi-pencil-square",
-    "SpanClass": "text-success"
+    "SpanClass": "text-success",
+    "isCollapsable": true,
+    "SubItems": [
+      {
+        "SubItemName": "alter",
+        "DisplayName": "Alter",
+        "IconClass": "bi bi-pie-chart",
+        "SpanClass": "text-success"
+      },
+      {
+        "SubItemName": "alterTotals",
+        "DisplayName": "AlterTotals",
+        "IconClass": "bi bi-pie-chart",
+        "SpanClass": "text-success"
+      },
+      {
+        "SubItemName": "alterDiff",
+        "DisplayName": "AlterDiff",
+        "IconClass": "bi bi-pie-chart",
+        "SpanClass": "text-success"
+      }
+    ]
   },
   {
-    "Name": "Delete",
+    "Name": "delete",
     "DisplayName": "Delete",
     "IconClass": "bi bi-trash-fill",
-    "SpanClass": "text-danger"
+    "SpanClass": "text-danger",
+    "isCollapsable": true,
+    "SubItems": [
+      {
+        "SubItemName": "delete",
+        "DisplayName": "delete",
+        "IconClass": "bi bi-pie-chart",
+        "SpanClass": "text-success"
+      }
+    ]
   }
 ]
