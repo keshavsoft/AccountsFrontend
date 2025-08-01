@@ -56,7 +56,8 @@
                             <tr>
                                 {{#each TableColumns}}
 
-                                <th data-field="{{field}}">
+                                <th data-field="{{field}}" {{#if showRupee}}data-formatter="window.RupeeFormatter"
+                                    {{/if}}>
                                     {{title}}
                                 </th>
                                 {{/each}}
@@ -69,6 +70,12 @@
         {{> _footer path="../.."}}
 
         {{> _scripts path="../.."}}
+        <script>
+            window.RupeeFormatter = (value) => {
+                if (value === null || value === undefined || value === '') return '';
+                return `₹ ${parseFloat(value).toFixed(2)}`;
+            };
+        </script>
 
         <script type="module" src="../../Js/JournalsTable/ShowAsIs/entryFile.js"></script>
     </main>

@@ -58,7 +58,8 @@
                                 {{#each TableColumns}}
                                 <th data-field="{{field}}" {{#if align}}data-align="{{align}}" {{/if}} {{#if
                                     footerFormatter}}data-footer-formatter="{{footerFormatter}}" {{/if}} {{#if
-                                    filterControl}}data-filter-control="{{filterControl}}" {{/if}}>
+                                    filterControl}}data-filter-control="{{filterControl}}" {{/if}} {{#if
+                                    showRupee}}data-formatter="window.RupeeFormatter" {{/if}}>
                                     {{#if title}}
                                     {{title}}
                                     {{/if}}
@@ -84,8 +85,12 @@
                 }, 0);
 
                 return LocalReturnValue;
+            };
+            window.RupeeFormatter = (value) => {
+                if (value === null || value === undefined || value === '') return '';
+                return `₹ ${parseFloat(value).toFixed(2)}`;
             };</script>
-     
+
         <script type="module" src="../../Js/JournalsTable/ShowGroupBy/entryFile.js"></script>
     </main>
 

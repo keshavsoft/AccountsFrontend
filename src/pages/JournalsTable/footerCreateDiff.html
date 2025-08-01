@@ -55,28 +55,15 @@
                             <tr>
                                 <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
                                 {{> ForTable/_TableHeaderDiff}}
-                                <th data-field="KS-Save">Options</th>
                             </tr>
                         </thead>
 
                         <tfoot>
-                            <tr>
-                                <th></th>
-                                {{> ForTable/_TableFooterDiff}}
-                                <th class="align-top p-1">
-                                    <div class="d-flex flex-column gap-1">
-                                        <button class="btn btn-sm btn-success save-btn" id="TableFooterSaveButtonId"
-                                            data-index="${index}">Save</button>
-                                        <div class="invisible"><small>placeholder</small></div>
-                                    </div>
-                                </th>
-                            </tr>
 
                             <tr>
                                 <th></th>
-                                {{> ForTable/_TableFooterDiff}}
-                                <th>
-                                </th>
+                                {{> ForTable/_TableFooterDiffOnly}}
+
                             </tr>
 
                         </tfoot>
@@ -90,6 +77,10 @@
         <script>
             window.GlobalSerialFormatter = (value, row, index) => {
                 return index + 1;
+            };
+            window.RupeeFormatter = (value) => {
+                if (value === null || value === undefined || value === '') return '';
+                return `₹ ${parseFloat(value).toFixed(2)}`;
             };
         </script>
         <script type="module" src="../../Js/JournalsTable/FooterCreateDiff/entryFile.js"></script>
