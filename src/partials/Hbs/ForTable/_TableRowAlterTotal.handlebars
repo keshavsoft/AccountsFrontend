@@ -3,7 +3,8 @@
 
     {{#each columns}}
     <th data-field="{{field}}" {{#if align}}data-align="{{align}}" {{/if}} {{#if
-        filterControl}}data-filter-control="{{filterControl}}" {{/if}}{{#if (isVisible this)}}
+        filterControl}}data-filter-control="{{filterControl}}" {{/if}} {{#if
+        footerFormatter}}data-footer-formatter="{{footerFormatter}}" {{/if}}{{#if (isVisible this)}}
         data-visible={{visible}}{{/if}} {{#if showRupee}}data-formatter="window.RupeeFormatter" {{/if}}>
         {{title}}
     </th>

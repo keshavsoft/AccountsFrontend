@@ -84,7 +84,6 @@
         </script>
         <script>function TotalFormatter(data, k1, k2) {
                 var field = this.field;
-                console.log("field : ", field, this, k1, k2);
 
                 const LocalReturnValue = data
                     .map(row => +row[field])
@@ -93,7 +92,8 @@
                 // Format with rupee symbol and two decimals
                 return `₹ ${LocalReturnValue.toFixed(2)}`;
             };</script>
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.24.2/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
         <script type="module" src="../../Js/JournalsTable/FilterCreditShow/entryFile.js"></script>
     </main>
 
