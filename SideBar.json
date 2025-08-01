@@ -90,6 +90,21 @@
     ]
   },
   {
+    "Name": "AccountsName",
+    "DisplayName": "AccountsName",
+    "IconClass": "bi bi-person-circle",
+    "SpanClass": "text-success",
+    "isCollapsable": true,
+    "SubItems": [
+      {
+        "SubItemName": "AccountNameShow",
+        "DisplayName": "AccountName",
+        "IconClass": "bi bi-person-lines-fill",
+        "SpanClass": "text-success"
+      }
+    ]
+  },
+  {
     "Name": "footerCreate",
     "DisplayName": "footerCreate",
     "IconClass": "bi bi-pencil-fill",
