@@ -5,12 +5,3 @@
 </th>
 {{/each}}
 <th data-field="KS-Alter" data-formatter="window.GlobalAlterFormatter">Options</th>
- <script> window.GlobalAlterFormatter = (value, row, index) => {
-        return [
-            `<a href="#" class="link btn" title="Edit">`,
-            `<i class="bi bi-pencil-square text-danger"></i>`,
-            `</a>`
-
-        ].join('');
-    };
-    </script>

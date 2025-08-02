@@ -63,6 +63,25 @@
 
         {{> _scripts path="../.."}}
 
+        <script>
+            window.GlobalSerialFormatter = (value, row, index) => {
+                return index + 1;
+            };
+
+            window.GlobalAlterFormatter = (value, row, index) => {
+                return [
+                    `<a href="#" class="link btn" title="Edit">`,
+                    `<i class="bi bi-pencil-square text-danger"></i>`,
+                    `</a>`
+
+                ].join('');
+            };
+            window.RupeeFormatter = (value) => {
+                if (value === null || value === undefined || value === '') return '';
+                return `₹ ${parseFloat(value).toFixed(2)}`;
+            };
+        </script>
+
         <script type="module" src="../../Js/JournalsTable/Alter/entryFile.js"></script>
     </main>
 

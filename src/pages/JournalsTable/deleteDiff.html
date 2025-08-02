@@ -82,6 +82,14 @@
                 if (value === null || value === undefined || value === '') return '';
                 return `₹ ${parseFloat(value).toFixed(2)}`;
             };
+            window.GlobalDeleteFormatter = (value, row, index) => {
+                return [
+                    `<a href="#" class="link btn" title="Delete">`,
+                    `<i class="bi bi-trash text-danger"></i>`,
+                    `</a>`
+
+                ].join('');
+            };
         </script>
         <script type="module" src="../../Js/JournalsTable/DeleteDiff/entryFile.js"></script>
     </main>
