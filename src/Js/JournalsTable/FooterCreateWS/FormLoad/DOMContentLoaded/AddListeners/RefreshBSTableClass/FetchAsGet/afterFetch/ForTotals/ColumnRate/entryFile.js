@@ -7,7 +7,7 @@ const StartFunc = ({ inFindColumn, inData }) => {
 
     const totalElement = document.getElementById(`HtmlTotalId-${fieldName}`);
     if (totalElement) {
-        totalElement.innerText = total;
+        totalElement.innerText = `₹ ${total}`;
     }
 };
 
