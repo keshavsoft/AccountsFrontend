@@ -66,17 +66,17 @@
                 return index + 1;
             };
         </script>
-         <script>function TotalFormatter(data, k1, k2) {
-            var field = this.field;
-            console.log("field : ", field, this, k1, k2);
-            const LocalReturnValue = data.map(function (row) {
-                return +row[field]
-            }).reduce(function (sum, i) {
-                return sum + i
-            }, 0);
+          <script>function TotalFormatter(data, k1, k2) {
+                var field = this.field;
+                console.log("field : ", field, this, k1, k2);
 
-            return LocalReturnValue;
-        };</script>
+                const LocalReturnValue = data
+                    .map(row => +row[field])
+                    .reduce((sum, i) => sum + i, 0);
+
+                // Format with rupee symbol and two decimals
+                return `₹ ${LocalReturnValue.toFixed(2)}`;
+            };</script>
 
         <script type="module" src="../../Js/JournalsTable/TotalsShow/entryFile.js"></script>
     </main>
