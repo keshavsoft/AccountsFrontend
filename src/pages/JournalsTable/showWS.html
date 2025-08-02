@@ -55,7 +55,7 @@
                                 <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
                                 {{#each TableColumns}}
 
-                                <th data-field="{{field}}" {{#if showRupee}}data-formatter="window.RupeeFormatter"
+                                <th data-field="{{field}}" {{#if align}}data-align="{{align}}" {{/if}} {{#if showRupee}}data-formatter="window.RupeeFormatter"
                                     {{/if}}>
                                     {{title}}
                                 </th>
