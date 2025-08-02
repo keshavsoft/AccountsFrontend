@@ -13,22 +13,3 @@
         Options
     </th>
 </tr>
-
-<script>
-    window.GlobalSerialFormatter = (value, row, index) => {
-        return index + 1;
-    };
-
-    window.GlobalDeleteFormatter = (value, row, index) => {
-        return [
-            `<a href="#" class="link btn" title="Delete">`,
-            `<i class="bi bi-trash text-danger"></i>`,
-            `</a>`
-
-        ].join('');
-    };
-    window.RupeeFormatter = (value) => {
-        if (value === null || value === undefined || value === '') return '';
-        return `₹ ${parseFloat(value).toFixed(2)}`;
-    };
-</script>

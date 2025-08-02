@@ -25,13 +25,13 @@
 <body>
     {{> _nav path="../.."}}
 
-   {{> SideNavs/sidebar path="../.." currentPage="delete" currentPageGroup="delete"}}
+    {{> SideNavs/sidebar path="../.." currentPage="delete" currentPageGroup="delete"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
         {{> _breadCrumb path="../.." page="Delete"}}
-        
+
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
                 class="btn d-flex justify-content-center align-items-center RefreshBSTableClass bg-gray-700 text-white"
@@ -54,7 +54,7 @@
                         <thead>
                             {{> ForTable/_TableRowDalete}}
                         </thead>
-                       
+
                     </table>
                 </div>
             </div>
@@ -62,6 +62,25 @@
         {{> _footer path="../.."}}
 
         {{> _scripts path="../.."}}
+
+        <script>
+            window.GlobalSerialFormatter = (value, row, index) => {
+                return index + 1;
+            };
+
+            window.GlobalDeleteFormatter = (value, row, index) => {
+                return [
+                    `<a href="#" class="link btn" title="Delete">`,
+                    `<i class="bi bi-trash text-danger"></i>`,
+                    `</a>`
+
+                ].join('');
+            };
+            window.RupeeFormatter = (value) => {
+                if (value === null || value === undefined || value === '') return '';
+                return `₹ ${parseFloat(value).toFixed(2)}`;
+            };
+        </script>
 
         <script type="module" src="../../Js/JournalsTable/Delete/entryFile.js"></script>
     </main>

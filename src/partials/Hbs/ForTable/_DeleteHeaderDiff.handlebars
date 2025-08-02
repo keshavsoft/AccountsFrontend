@@ -4,13 +4,4 @@
     {{#if title}}{{title}}{{/if}}
 </th>
 {{/each}}
-<th data-field="KS-Delete" data-formatter="window.GlobalAlterFormatter">Options</th>
- <script> window.GlobalAlterFormatter = (value, row, index) => {
-        return [
-            `<a href="#" class="link btn" title="Delete">`,
-            `<i class="bi bi-trash text-danger"></i>`,
-            `</a>`
-
-        ].join('');
-    };
-    </script>
+<th data-field="KS-Delete" data-formatter="window.GlobalDeleteFormatter">Options</th>
