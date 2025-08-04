@@ -175,5 +175,11 @@
         "SpanClass": "text-success"
       }
     ]
+  },
+  {
+    "Name": "filterShow",
+    "DisplayName": "filterShow",
+    "IconClass": "bi bi-pencil-fill",
+    "SpanClass": "text-dark"
   }
 ]
